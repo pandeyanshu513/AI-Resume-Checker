@@ -135,7 +135,7 @@ const analyzeBody = z.object({
 });
 
 router.post(
-  "/:id/analyse",
+  "/:id/analyze",
   analyzeLimiter,
   validate(idParam, "params"),
   validate(analyzeBody),
